@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Model Evaluation</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="gradient-bg">
+  <div class="container">
+    <div class="card">
+      <h2>📊 Model Evaluation Results</h2>
+      <img src="{{ url_for('static', filename='plots/confusion_matrix.png') }}" alt="Confusion Matrix" class="eval-img">
+      <img src="{{ url_for('static', filename='plots/accuracy_bar.png') }}" alt="Accuracy Chart" class="eval-img">
+      <a href="/" class="back-btn">⬅️ Back to Upload</a>
+    </div>
+  </div>
+</body>
+</html>
